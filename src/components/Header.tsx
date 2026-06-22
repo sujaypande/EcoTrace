@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { ECOTRACE_TAGLINE } from "@/lib/branding";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import {
@@ -119,17 +118,17 @@ export default function Header({ onMenuClick, totalEarnings }: HeaderProps) {
             <Leaf className="h-6 w-6 md:h-8 md:w-8 text-green-500 mr-1 md:mr-2" />
             <div className="flex flex-col">
               <span className="font-bold text-base md:text-lg text-gray-800">
-                EcoTrace
+                GreenBytes
               </span>
               <span className="text-[8px] md:text-[10px] text-gray-500 -mt-1">
-                {ECOTRACE_TAGLINE}
+                Old Tech, New Life
               </span>
             </div>
           </Link> */}
 
           <Link href="/" className="flex items-center">
             <img
-              src="/ewaste logo.png"
+              src="/ewaste logo.png" // Replace with your actual logo file name
               alt="EcoTrace Logo"
               className="h-8 md:h-10 w-auto mr-2"
             />
@@ -138,7 +137,7 @@ export default function Header({ onMenuClick, totalEarnings }: HeaderProps) {
                 EcoTrace
               </span>
               <span className="text-[8px] md:text-[10px] text-gray-500 -mt-1">
-                {ECOTRACE_TAGLINE}
+                Old Tech, New Life
               </span>
             </div>
           </Link>
